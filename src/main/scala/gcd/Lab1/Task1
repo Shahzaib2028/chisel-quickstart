@@ -1,0 +1,12 @@
+SInt to SInt  -> Possible
+SInt to UInt  -> Possible
+UInt to UInt  -> Possible
+UInt to SInt  -> Possible
+Bool to UInt  -> Possible
+Bool to Int   -> Possible
+UInt to Int   -> Possible
+SInt to Int   -> Possible
+Int  to SInt  -> Possible
+Int  to UInt  -> Possible
+Clock to UInt -> Not Possible
+
