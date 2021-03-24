@@ -1,0 +1,29 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Lab_2_Exercise_2/lab2_exe_2.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~lab2_exe_2|lab2_exe_2>io_out",
+    "sources":[
+      "~lab2_exe_2|lab2_exe_2>io_in7",
+      "~lab2_exe_2|lab2_exe_2>io_in3",
+      "~lab2_exe_2|lab2_exe_2>io_sel",
+      "~lab2_exe_2|lab2_exe_2>io_in6",
+      "~lab2_exe_2|lab2_exe_2>io_in2",
+      "~lab2_exe_2|lab2_exe_2>io_in5",
+      "~lab2_exe_2|lab2_exe_2>io_in1",
+      "~lab2_exe_2|lab2_exe_2>io_in4",
+      "~lab2_exe_2|lab2_exe_2>io_in0"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Lab_2_Exercise_2"
+  }
+]
