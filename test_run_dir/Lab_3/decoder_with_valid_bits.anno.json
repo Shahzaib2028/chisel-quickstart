@@ -1,0 +1,28 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Lab_3/decoder_with_valid_bits.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~decoder_with_valid_bits|decoder_with_valid_bits>io_out_valid",
+    "sources":[
+      "~decoder_with_valid_bits|decoder_with_valid_bits>io_in"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~decoder_with_valid_bits|decoder_with_valid_bits>io_out_bits",
+    "sources":[
+      "~decoder_with_valid_bits|decoder_with_valid_bits>io_in"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Lab_3"
+  }
+]
