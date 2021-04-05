@@ -1,0 +1,23 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/lab5/Mux2_to_1.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Mux2_to_1|Mux2_to_1>io_out",
+    "sources":[
+      "~Mux2_to_1|Mux2_to_1>io_sel",
+      "~Mux2_to_1|Mux2_to_1>io_in1",
+      "~Mux2_to_1|Mux2_to_1>io_in2"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/lab5"
+  }
+]

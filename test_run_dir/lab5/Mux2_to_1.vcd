@@ -1,0 +1,84 @@
+$date
+2021-04-02T17:33+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module Mux2_to_1 $end
+ $var wire 4 ! io_out $end
+ $var wire 1 " io_sel $end
+ $var wire 1 # clock $end
+ $var wire 4 $ io_in2 $end
+ $var wire 1 % reset $end
+ $var wire 4 & io_in1 $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0%
+0"
+b0000 $
+0#
+b0000 !
+b0000 &
+$end
+#0
+1%
+#1
+1#
+#6
+b1010 !
+0%
+b0010 &
+0#
+b1010 $
+#11
+1#
+#16
+0#
+#21
+1#
+#26
+0#
+#31
+1#
+#36
+0#
+#41
+1#
+#46
+0#
+#51
+1#
+#56
+0#
+#61
+1#
+#66
+0#
+#71
+1#
+#76
+0#
+#81
+1#
+#86
+0#
+#91
+1#
+#96
+0#
+#101
+1#
+#106
+b0000 !
+b0000 &
+0#
+b0000 $
+#111
+1#
+#116
+0#
