@@ -9,6 +9,10 @@ class Exercise3 [ T <: Data ]( n : Int , generic : T ) ( op : (T , T ) => T ) ex
             val out = Output (Vec (2 , generic ))
         })
 
-        io.out(0) := io.in.reduce(op)
-	io.out(1) := io.in.reduce(op)
+        /*io.out(0) := io.in.reduce(op)
+	io.out(1) := io.in.reduce(op)*/
+	
+	for (i <- 0 until n){
+		io.out(i) := io.in.reduce(op)
+	}
 }
