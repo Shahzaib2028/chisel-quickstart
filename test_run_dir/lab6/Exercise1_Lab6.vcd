@@ -1,0 +1,104 @@
+$date
+2021-04-07T18:39+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module Exercise1_Lab6 $end
+ $var wire 3 ! _state_T $end
+ $var wire 1 " io_out $end
+ $var wire 1 # _T $end
+ $var wire 4 $ state $end
+ $var wire 4 % _load_T_1 $end
+ $var wire 4 & _GEN_1 $end
+ $var wire 1 ' clock $end
+ $var wire 4 ( load $end
+ $var wire 5 ) _load_T $end
+ $var wire 4 * _GEN_0 $end
+ $var wire 1 + _io_out_T $end
+ $var wire 4 , io_in $end
+ $var wire 1 - reset $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0"
+b0000 *
+b0000 $
+0#
+b0000 (
+0-
+0'
+b0000 ,
+0+
+b00000 )
+b0000 %
+b000 !
+b0000 &
+$end
+#0
+1-
+b0001 %
+1#
+b0001 *
+b00001 )
+#1
+1'
+#6
+0-
+b1101 &
+0'
+b1101 ,
+#11
+b110 !
+b0010 %
+1"
+b0110 &
+0#
+1'
+b1101 $
+1+
+b0001 (
+b00010 )
+#16
+0'
+#21
+b011 !
+0"
+b0011 &
+1'
+b0110 $
+0+
+#26
+0'
+#31
+b001 !
+1"
+b0001 &
+1'
+b0011 $
+1+
+#36
+0'
+#41
+b000 !
+b0000 &
+1'
+b0001 $
+#46
+0'
+#51
+0"
+1'
+b0000 $
+0+
+#56
+0'
+b0000 ,
+#61
+1'
+#66
+0'
