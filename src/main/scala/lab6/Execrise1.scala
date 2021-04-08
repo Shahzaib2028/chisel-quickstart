@@ -2,28 +2,33 @@ package lab6
 import chisel3._
 import chisel3.util._
 
-class shift_register(n: Int , val init: Int = 1 ) extends Module{
+class shift_register(n: Int) extends Module{
 	val io = IO(new Bundle{
-		val in = Input(Bool())
-		val out = Output(UInt(4.W))
+		val in = Input(UInt(n.W))
+		val out = Output(Bool())
 	})
 
-	val state = RegInit(init.U(4.W))
-	val register = Reg(Vec(n,UInt(4.W)))
+	val state = RegInit(0.U(n.W))
+	val load = RegInit(0.U(n.W))
 
-	val next_state = (state << 1) | io.in  //0010 | 000
-	state := next_state
+	io.out := 0.B
 
-	//io.out := state
+	when(load === 0.U){
+		state := io.in
+		load := load + 1.U
+	}.otherwise{
+		state := state >> 1
+		io.out := state
+	}
 
-	for (i <- 0 until n){
-        	register(i) := state
-		io.out := register(i)
-   	 } 
+	/*val next_state = (state >> 1) | io.in  
+	state := next_state*/
 
+	
+
+	
 	
 
 	
 	
 }
-
