@@ -4,12 +4,20 @@ import chisel3.util._
 
 class Queue_exe extends Module {
     val io = IO ( new Bundle {
-    val in = Flipped ( Decoupled ( UInt (8. W ) ) ) // valid = Input , ready =Output , bits = Input
-    val out = Decoupled ( UInt (8. W ) )
+    val in = Flipped (Decoupled(UInt(8.W)))
+    val out = Decoupled (UInt(8.W))
     })
 
-    val queue1 = Queue ( io.in , 5)
-    val queue2 =Queue (queue1,5)  // 5 - element queue
+    io.out.bits := 0.U
+    io.out.valid := false.B
 
-io.out <> queue2
+    val queue1 = Queue ( io.in, 5)
+    val queue2 =Queue (queue1 , 5)
+   
+    queue1.nodeq()
+    queue2.nodeq()
+
+    when(queue2.valid && io.out.ready){
+	io.out.enq(queue2.deq())
+    }
 }
