@@ -1,0 +1,24 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise2|Exercise2>io_data_out_1",
+    "sources":[
+      "~Exercise2|Exercise2>io_mask_1"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise2|Exercise2>io_data_out_0",
+    "sources":[
+      "~Exercise2|Exercise2>io_mask_0"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/lab8"
+  }
+]
