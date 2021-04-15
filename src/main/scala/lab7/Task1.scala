@@ -12,9 +12,7 @@ class My_Queue extends Module{
 		
 	})
 
-	val s0 :: s1 :: s2 :: s3 :: Nil = Enum(4)
-	val s4 = 4.U
-	val s5 = 5.U
+	val s0 :: s1 :: s2 :: s3 :: s4 :: s5 :: Nil = Enum(6)
 	val state = RegInit(s0)
 
 	switch(state){
