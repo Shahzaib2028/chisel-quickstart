@@ -1,0 +1,24 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/lab7/My_Queue.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~My_Queue|My_Queue>io_out",
+    "sources":[
+      "~My_Queue|My_Queue>io_r1",
+      "~My_Queue|My_Queue>io_f1",
+      "~My_Queue|My_Queue>io_r2",
+      "~My_Queue|My_Queue>io_f2"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/lab7"
+  }
+]
