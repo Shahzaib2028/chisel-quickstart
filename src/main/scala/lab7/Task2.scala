@@ -23,30 +23,7 @@ class Task2_lab7 extends Module{
 
     io.out:=0.U
     io.flag:=0.U
-    /*switch (io.start){
-        is (true.B){
-            when(io.in === 1.U){
-                val next_state = (register << 1.U) | io.in
-                register := next_state
-                io.out := register
-                state := s0
-                io.flag := 1.U
-            }.elsewhen(io.in === 0.U){
-                val next_state = (register << 1.U) | io.in
-                register := next_state
-                io.out := register
-                state := s1
-                io.flag := 1.U
-            }
-
-        }
-        is (false.B){
-            io.out:=register
-            io.flag:=0.U
-            //no chnage in state   
-            state := state 
-        }
-    }*/
+    
 
     switch(state){
         is(s0){
