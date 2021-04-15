@@ -14,19 +14,19 @@ class Manchester_Encoding extends Bundle {
 
 class Task2_lab7 extends Module{
     val io =IO (new Manchester_Encoding)
-    val register = RegInit(0.U(8.W))
+    val state = RegInit(0.U(8.W))
     io.out:=0.U
     io.flag:=0.U
     switch (io.start){
         is (true.B){
-            val state = (register << 1.U) | io.in
-            register := state
-            io.out := register
+            val next_state = (state << 1.U) | io.in
+            state := next_state
+            io.out := state
             io.flag := 1.U
 
         }
         is (false.B){
-            io.out:=register
+            io.out:=state
             io.flag:=0.U    
         }
     }
