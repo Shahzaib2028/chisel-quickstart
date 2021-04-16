@@ -50,13 +50,7 @@ class Exercise1 extends Module {
 
     val Concat = Cat(io.mask(3) , io.mask(2) , io.mask(1) , io.mask(0))
      when(io.write === true.B){
-        when(Concat === 0.U){
-            vector(0) := 0.U
-            vector(1) := 0.U
-            vector(2) := 0.U
-            vector(3) := 0.U
-            mem.write(io.addr, vector)
-        }.elsewhen(Concat === 1.U){
+        when(Concat === 1.U){
             vector(0) := io.dataIn(0)
             vector(1) := 0.U
             vector(2) := 0.U
